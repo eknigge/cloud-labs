@@ -34,6 +34,8 @@ To complete this lab, you will need the following:
 
 ### Exercise #1: Provision a Linux VM in Microsoft Azure
 
+In this exercise, you will provision a Linux virtual machine (VM) running Ubuntu Server distribution in Microsoft Azure.
+
 1. Sign into the Microsoft Azure Management Portal at http://portal.azure.com using your Microsoft Account.
 2. Click on ![Create a resource](media/azure-create-a-resource.png) in the upper left corner right under the Microsoft Azure logo.
 3. In the search box search for Ubuntu Server 20.04.
@@ -79,7 +81,7 @@ To complete this lab, you will need the following:
     > You may need to provide some additional information on this screen. Use your best judgement for the required information.
 22. Wait until the deployment is complete.
 23. Once the deployment is complete, click on the ![Resource groups button](media/azure-resource-groups-button.png) button in the left-hand menu list under the Microsoft Azure logo.
-24. Find the `azvmnginxlab-[initials]-vm01` resource group in the list and click on it.
+24. Find the `azvmnginxlab-[initials]-rg` resource group in the list and click on it.
 25. Verify the following resource types exist:
   - `Virtual network`
   - `Virtual machine`
@@ -91,8 +93,103 @@ To complete this lab, you will need the following:
 #### Exercise Summary
 At this point, you have learned how to provision an Ubuntu Linux virtual machine (VM) in the Microsoft Azure cloud. Note that although you requested the creation of a single resource, multiple were created. 
 
-### Exercise 2: Exercise Title
-### Exercise 3: Exercise Title
+### Exercise #2: Connect to the newly provisioned VM using an SSH client
+
+In this exercise, you will connect to the newly provisioned VM using an SSH client.
+
+> You need to have an SSH client installed on your machine. On MacOS, Windows 10, or Linux the SSH client is available by default. For older Windows versions, you will need to download third-party SSH client software.
+
+1. Click on the `azvmnginxlab-[initials]-vm01` virtual machine resource.
+2. From the *Overview* blade note the *Public IP address* of the virtual machine.
+3. Open the terminal on your local machine.
+4. Connect to the virtual machine via SSH by typing the following at the command prompt:
+   ```
+   $ ssh computelabadmin@<the_ip_address_from_step_2>
+   ```
+5. Confirm the key message.
+6. Type the password for the virtual machine at the prompt.
+
+#### Exercise Summary
+
+At this point, you have learned how to connect to the remote Virtual Machine using an SSH client
+
+### Exercise #3: Use the command line to manually install the NGINX web server on the VM
+
+In this exercise, you will use the command line to update the Ubuntu repositories and install the NGINX web server on the VM.
+
+1. While connected to the VM, update the Ubuntu repositories by typing the following at the command prompt:
+   ```
+   $ sudo apt-get update
+   ```
+   > If asked, you have to type the computelabadmin’s password because you use the sudo command.
+2. Once the update is complete, install the NGINX web server by typing the following at the command prompt:
+   ```
+   $ sudo apt-get install nginx
+   ```
+3. Respond with `Y` (yes) to the prompts on the screen.
+4. Once the installation completes, start the NGINX web server using the following command:
+   ```
+   $ sudo /etc/init.d/nginx start
+   ```
+
+#### Exercise summary
+
+At this point, you have learned how to install and start an NGINX web server on the VM.
+
+### Exercise #4: Connect to the Web server using a browser
+
+In this exercise, you will use a browser to connect to the Web server and load its home page.
+
+1. Open a browser on your local machine.
+2. In the address bar, type the *Public IP address* from *Step 2* in *Exercise #2* above.
+3. You should see the home page served by the NGINX web server.
+
+#### Exercise Summary
+
+At this point, you have learned how to install and run an NGINX Web server on the remote Virtual Machine. You have also verified that you can access the web server’s home page from your local machine using a browser.
+
+### Exercise #5: Modify the Web server’s home page
+
+In this exercise, you will modify the NGINX web server’s home page to show a custom message.
+
+1. While connected via SSH to the VM, open the HTML file that describes the NGINX home page in Vi by typing the following at the prompt:
+   ```
+   sudo vi /var/www/html/index.nginx-debian.html
+   ```
+2. Using the arrows on the keyboard, position the cursor after the exclamation mark on the line that has the following: 
+   ```
+   <h1>Welcome to nginx!</h1>
+   ```
+3. Press the `i` key on the keyboard to enter *INSERT* mode in Vi editor.
+4. Type the following:
+   ```
+   Hello, <code>computelabadmin</code>!
+   ```
+5. Press the `ESC` key on the keyboard to exit *INSERT* mode in Vi.
+6. Type the following to save the file and exit Vi
+   ```
+   :wq
+   ```
+7. Switch to your browser window and reload the page. You should see the updated home page.
+
+#### Exercise Summary
+
+At this point, you have learned how to locate the NGINX web server’s home page (also called index page) source and modify it as well as verify that the changes are visible using your local machine’s browser.
+
+### Exercise #6: Stop the VM
+
+In this exercise, you will learn how to stop the VM to avoid additional charges while not using it.
+
+1. Sign into the Microsoft Azure Management Portal at http://portal.azure.com using your Microsoft Account.
+2. Click on the ![Resource groups button](media/azure-resource-groups-button.png) button in the left-hand menu list under the Microsoft Azure logo.
+3. Find the `azvmnginxlab-[initials]-rg` resource group in the list.
+4. In the *Overview* blade, find the `azvmnginxlab-[initials]-vm01` virtual machine resource and click on it.
+5. Click on the ![Stop button](media/azure-stop-button.png) on top of the *Overview* blade.
+6. When prompted, click on the ![OK button](media/azure-ok-button.png)
+
+#### Exercise Summary
+
+At this point, you have learned how to stop the VM and save on cost when you are not using it.
 
 ## Help improve this lab
 
