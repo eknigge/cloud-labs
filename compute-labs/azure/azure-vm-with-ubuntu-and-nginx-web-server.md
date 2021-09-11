@@ -62,19 +62,19 @@ In this exercise, you will provision a Linux virtual machine (VM) running Ubuntu
   - *Public inbound ports* → `Allow selected ports`
   - *Selected inbound ports* → Select `HTTP (80)` and `SSH (22)`
 10. Click on ![Next : Disks button](media/azure-next-disks-button.png) button.
-11. On the **Disks** tab, leave the default selections.
+11. On the *Disks* tab, leave the default selections.
 12. Click on ![Next : Networking button](media/azure-next-networking-button.png) button.
-13. On the **Networking** tab, leave the default selections.
+13. On the *Networking* tab, leave the default selections.
 14. Click on ![Next : Management button](media/azure-next-management-button.png) button.
-15. On the **Management** tab, leave the default selections.
+15. On the *Management* tab, leave the default selections.
 16. Click on the ![Next : Advanced button](media/azure-next-advanced-button.png) button.
-17. On the **Advanced** tab, leave the default selections.
+17. On the *Advanced* tab, leave the default selections.
 18. Click on the ![Next : Tags button](media/azure-next-tags-button.png) button.
-19. On the **Tags** tab, add the following tags:
-  - **Role** → `web`
-  - **Lab** → `azvmnginxlab`
-  - **Owner** → `[your full name]`
-  - **OwnerEmail** → `[your email address]`
+19. On the *Tags* tab, add the following tags:
+  - *Role* → `web`
+  - *Lab* → `azvmnginxlab`
+  - *Owner* → `[your full name]`
+  - *OwnerEmail* → `[your email address]`
 20. Click on the ![Next : Review + create button](media/azure-next-review-and-create-button.png) button.
 21. Review the summary and click on the ![Create button](media/azure-create-button.png) button.
     
