@@ -36,7 +36,7 @@ To complete this lab, you will need the following:
 
 In this exercise, you will provision a Linux virtual machine (VM) running Ubuntu Server distribution in Microsoft Azure.
 
-1. Sign into the Microsoft Azure Management Portal at http://portal.azure.com using your Microsoft Account.
+1. Sign into the Microsoft Azure Management Portal at [http://portal.azure.com](http://portal.azure.com) using your Microsoft Account.
 2. Click on ![Create a resource](media/azure-create-a-resource.png) in the upper left corner right under the Microsoft Azure logo.
 3. In the search box search for Ubuntu Server 20.04.
 4. Select Ubuntu Server 20.04 LTS by Canonical from the list of results.
