@@ -38,8 +38,8 @@ In this exercise, you will provision a Linux virtual machine (VM) running Ubuntu
 
 1. Sign into the Microsoft Azure Management Portal at [http://portal.azure.com](http://portal.azure.com) using your Microsoft Account.
 2. Click on ![Create a resource](media/azure-create-a-resource.png) in the upper left corner right under the Microsoft Azure logo.
-3. In the search box search for Ubuntu Server 20.04.
-4. Select Ubuntu Server 20.04 LTS by Canonical from the list of results.
+3. In the search box search for *Ubuntu Server 20.04*.
+4. Select *Ubuntu Server 20.04 LTS by Canonical* from the list of results.
 5. Click on the ![Create button](media/azure-create-button.png) button.
 6. On the *Basics* tab in section, *Project Details* fill in the following information:
   - *Subscription* → `[select your Microsoft Azure subscription]`
