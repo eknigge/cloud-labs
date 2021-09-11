@@ -1,4 +1,4 @@
-# Lab Title &middot;
+# Azure Function with HTTP Trigger
 
 > Hands-on Lab
 
