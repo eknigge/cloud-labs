@@ -2,11 +2,11 @@
 
 > Hands-on Lab
 
-|                   |                   |
-| :---------------- | :---------------- |
-| Cloud Vendor      | Microsoft Azure   |
-| Proficiency Level | Cloud  Enthusiast |
-| Tags              | #Tag1 #Tag2       |
+|                   |                       |
+| :---------------- | :-------------------- |
+| Cloud Vendor      | **Microsoft Azure**   |
+| Proficiency Level | **Cloud  Enthusiast** |
+| Tags              | ![https://img.shields.io/badge/%20-Linux-blue](https://img.shields.io/badge/%20-Linux-blue) ![https://img.shields.io/badge/%20-NGINX-blue](https://img.shields.io/badge/%20-NGINX-blue) ![https://img.shields.io/badge/%20-Ubuntu-blue](https://img.shields.io/badge/%20-Ubuntu-blue) |
 
 ## Lab Scenario
 _Describe the scenario this lab will implement. You can also add some diagrams here to make it clearer what is implemented._
@@ -26,8 +26,22 @@ _Describe any prerequisites for this lab. Those can be other labs that the stude
 _Split the lab instructions in different exercises that build upon each other._
 
 ### Exercise 1: Exercise Title
+_Exercise steps_
+
+#### Exercise Summary
+_Exercise summary_
+
 ### Exercise 2: Exercise Title
+_Exercise steps_
+
+#### Exercise Summary
+_Exercise summary_
+
 ### Exercise 3: Exercise Title
+_Exercise steps_
+
+#### Exercise Summary
+_Exercise summary_
 
 ## Try it out
 _Add a link to try the lab out._
