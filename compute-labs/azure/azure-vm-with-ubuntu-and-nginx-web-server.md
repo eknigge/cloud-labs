@@ -9,7 +9,7 @@
 | *Tags*              | ![https://img.shields.io/badge/%20-Linux-blue](https://img.shields.io/badge/%20-Linux-blue) ![https://img.shields.io/badge/%20-NGINX-blue](https://img.shields.io/badge/%20-NGINX-blue) ![https://img.shields.io/badge/%20-Ubuntu-blue](https://img.shields.io/badge/%20-Ubuntu-blue) ![https://img.shields.io/badge/%20-Virtual%20Machine-blue](https://img.shields.io/badge/%20-Virtual%20Machine-blue) ![https://img.shields.io/badge/%20-Web%20Server-blue](https://img.shields.io/badge/%20-Web%20Server-blue) |
 
 ## Lab Scenario
-In this lab, you will provision a Microsoft Azure Virtual Machine (VM) that runs Ubuntu Linux server operating system. Once the VM is provisioned, you will install a NGINX Web server software on it. After the Web server is installed, you will verify that it is running by accessing its home page with a browser. Last, you will modify the home page to show the text `Hello, computelabadmin!`
+In this lab, you will provision a Microsoft Azure Virtual Machine (VM) that runs Ubuntu Linux server operating system. Once the VM is provisioned, you will install a NGINX Web server software on it. After the Web server is installed, you will verify that it is running by accessing its home page with a browser. Last, you will modify the home page to show the text `Hello, computelabadmin!`.
 
 Each exercise below builds upon the previous one. You should start each new exercise from the last step of the previous exercise unless it is explicitly written otherwise.
 
