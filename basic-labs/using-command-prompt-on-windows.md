@@ -13,7 +13,6 @@ The objective of this lab is to get familiar with Windows Command Prompt. At the
 
 ## Lab Instructions
 
-
 1. Click on the **[Start]** button and type *Command prompt*.
 2. Click on the **[Command prompt]** desktop app from the list.
 3. *Milestone step:* At this point, you have learned how to start *Command Prompt* on a Windows machine.
