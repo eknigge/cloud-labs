@@ -54,7 +54,7 @@ The objective of this lab is to get familiar with Windows Command Prompt. At the
     C:\Users> cd {your-username}
     ```
 23. You will go back to your home folder.
-24. *Milestone step:* At this point, you have learned how to navigate the directory tree using Command Prompt on your Windows machine
+24. *Milestone step:* At this point, you have learned how to navigate the directory tree using Command Prompt on your Windows machine.
 
 ## Help improve this lab
 
