@@ -4,9 +4,9 @@
 
 |                   |                       |
 | :---------------- | :-------------------- |
-| Operating System  | **MacOS** |
+| Operating System  | **MacOS**             |
 | Proficiency Level | **Cloud  Enthusiast** |
-| Tags              | ![https://img.shields.io/badge/%20-MacOS-blue](https://img.shields.io/badge/%20-MacOS-blue) ![https://img.shields.io/badge/%20-Terminal-blue](https://img.shields.io/badge/%20-Terminal-blue) |
+| Tags              | ![https://img.shields.io/badge/%20-Shell-blue](https://img.shields.io/badge/%20-Shell-blue) ![https://img.shields.io/badge/%20-Terminal-blue](https://img.shields.io/badge/%20-Terminal-blue) ![https://img.shields.io/badge/%20-Vi-blue](https://img.shields.io/badge/%20-Vi-blue) |
 
 ## Lab Scenario
 The objective of this lab is to get familiar with MacOS terminal and basic shell commands. You will also learn how to edit a file in the built-in Vi editor. At the end of this lab, you will be able to start the Terminal app, know your user’s home folder, navigate the directory tree, browse files and create and save text files with Vi.
