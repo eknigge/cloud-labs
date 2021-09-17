@@ -13,7 +13,6 @@ The objective of this lab is to get familiar with MacOS terminal and basic shell
 
 ## Lab Instructions
 
-
 1. Press the `Command key ⌘` + `space` on your Mac keyboard to open *Spotlight Search*.
 2. Type `terminal` in the *Spotlight Search* input box and press the *Return* key.
 3. *Milestone step:* At this point, you have learned how to start the *Terminal* app in MacOS.
@@ -21,7 +20,7 @@ The objective of this lab is to get familiar with MacOS terminal and basic shell
 5. You will see the current folder location, which is the home folder of your user on the machine.
 6. *Milestone step:* At this point, you have learned what is the path to the home folder for your user on your Mac machine.
 7. Type `ls` after the prompt `%`.
-8. You will receive the list of non-hidden files and folders in your home folder
+8. You will receive the list of non-hidden files and folders in your home folder.
 9. Type `ls -al` after the prompt `%`.
 10. You will receive the list of all files and folders in your home folder in a list form including additional information like type (file or folder), owner, group, size and modification date.
 11. *Milestone step:* At this point, you have learned how to list files in a folder on a Mac machine as well as get additional information about the files and folders.
@@ -47,7 +46,7 @@ The objective of this lab is to get familiar with MacOS terminal and basic shell
 31. Type `:q` in the Vi command line (this is the bottom line of the window).
 32. You will exit Vi.
 33. Type `ls -al test.*` after the prompt `%`.
-34. *Milestone step:* At this point, you have learned how to exit Vi text editor and list the file you have just created in your home folder.
+34. *Milestone step:* At this point, you have learned how to exit Vi text editor and find the file you have just created in your home folder.
 35. Type `cd ..` after the prompt `%`.
 36. Type `ls -al` after the prompt `%`.
 37. You will be in the `/Users` folder on your Mac machine.
