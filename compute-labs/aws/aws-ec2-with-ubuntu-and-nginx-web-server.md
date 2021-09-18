@@ -1,4 +1,4 @@
-# Lab Title &middot;
+# AWS EC2 Instance With Ubuntu and NGINX Web Server
 
 > Hands-on Lab
 
