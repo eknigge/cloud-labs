@@ -40,7 +40,7 @@ In this exercise, you will create an Azure Function App Resource. Azure Function
 5. Click on the ![Create button](media/azure-create-button.png) button.
 6. On the *Basics* tab in section, *Project Details* fill in the following information:
   - *Subscription* → `[select your Microsoft Azure subscription]`
-  - *Resource group* → Click on  `Create new`
+  - *Resource group* → Click on `Create new`
   - *Name* (the text field in the pop up) → `azfunhttplab-[initials]-rg`, where `[initials]` are your first, middle, and last name initials
 7. On the *Basics* tab in section, *Instance Details* fill in the following information:
   - *Function App name* → `azfunhttplab-[initials]-fun`
