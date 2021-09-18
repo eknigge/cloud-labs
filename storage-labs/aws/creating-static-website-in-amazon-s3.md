@@ -33,7 +33,7 @@ To complete this lab, you will need the following:
 
 ## Lab Instructions
 
-### Exercise 1: Exercise Title
+### Exercise 1: Creating an Amazon S3 Bucket
 
 In this exercise, you will create an Amazon S3 bucket that you will use to host your static web site.
 
