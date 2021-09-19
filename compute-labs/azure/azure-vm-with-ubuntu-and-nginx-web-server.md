@@ -1,4 +1,4 @@
-# Azure VM With Ubuntu and NGINX Web Server &middot;
+# Azure VM With Ubuntu and NGINX Web Server
 
 > Hands-on Lab
 
