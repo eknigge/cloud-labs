@@ -5,7 +5,7 @@
 |                   |                       |
 | :---------------- | :-------------------- |
 | Cloud Vendor      | **Microsoft Azure**   |
-| Proficiency Level | **Cloud  Enthusiast** |
+| Proficiency Level | **Cloud Enthusiast**  |
 | Tags              | ![https://img.shields.io/badge/%20-Subnet-blue](https://img.shields.io/badge/%20-Subnet-blue) ![https://img.shields.io/badge/%20-Virtual%20Network-blue](https://img.shields.io/badge/%20-Virtual%20Network-blue) |
 
 ## Lab Scenario
