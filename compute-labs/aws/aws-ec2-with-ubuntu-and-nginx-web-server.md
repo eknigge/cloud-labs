@@ -157,7 +157,7 @@ In this exercise, you will modify the NGINX web server’s home page to show a c
 
 At this point, you have learned how to locate the NGINX web server’s home page (also called index page) source and modify it as well as verify that the changes are visible using your local machine’s browser.
 
-### EExercise #6: Stop the EC2 Instance
+### Exercise #6: Terminate the EC2 Instance
 
 In this exercise, you will learn how to stop the EC2 instance and not incur any additional charges for it.
 
@@ -166,7 +166,7 @@ In this exercise, you will learn how to stop the EC2 instance and not incur any 
 3. Click on *EC2* from the list of *Services*.
 4. Click on the *Instance ID* next to the `[initials]-awsec2nginxweblab-instance` EC2 instance from the list, where `[initials]` are your first, middle, and last name initials.
 5. From the ![Instance State button](media/aws-instance-state-dropdown-button.png), select the *Stop instance* option.
-6. Click on the ![Stop button](media/aws-stop-orange-button.png) on the *Stop instance*s* pop-up to confirm.
+6. Click on the ![Terminate button](media/aws-terminate-orange-button.png) on the *Terminate instances* pop-up to confirm.
 
 #### Exercise Summary
 At this point, you have learned how to stop the EC2 instance and save costs when you are not using it.
