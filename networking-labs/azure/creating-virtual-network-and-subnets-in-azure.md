@@ -59,6 +59,7 @@ In this exercise, you will provision a virtual network with a two subnets (`publ
 16. Click on the ![Next : Security button](media/azure-next-security-button.png) button.
 17. Leave all selection as by default.
 18. Click on the ![Next : Tags button](media/azure-next-tags-button.png) button.
+19. On the *Tags* tab, fill in the following information:
   - *Role* → `virtual network`
   - *Lab* → `aznetworkinglab`
   - *Owner* → `[your full name]`
