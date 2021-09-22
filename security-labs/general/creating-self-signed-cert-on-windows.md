@@ -89,6 +89,23 @@ In this exercise, you will convert the certificate to PKCS#12 format using Windo
 
 At this point, you have learned how to convert the self-signed certificate to PKCS#12 format on Windows 10.
 
+### Exercise #3: Convert the Self-Signed Certificate to from PKCS#12 to PEM
+
+In this exercise, you will convert the certificate from PKCS#12 to PEM format using Windows 10 Git Bash. This format is used for upload to cloud-based services and Web servers.
+
+1. Type the following command to convert the certificate to PKCS#12 format
+  ```
+  openssl pkcs12 -in -in [your_name]-self-signed.key.pfx -out [your_name]-self-signed.key.pem -nodes
+  ```
+2. List the files in the folder using the following command:
+  ```
+  ls -al
+  ```
+
+#### Exercise Summary
+
+At this point, you have learned how to convert the self-signed certificate from PKCS#12 format to PEM format on Windows 10.
+
 ## Help improve this lab
 
 [![Lab Issues](https://img.shields.io/github/issues/crimsonpinnacle/cloud-labs)](https://github.com/CrimsonPinnacle/cloud-labs/issues/new?assignees=toddysm&labels=new+lab&template=bug_template.md&title=) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/CrimsonPinnacle/cloud-labs/pulls)
