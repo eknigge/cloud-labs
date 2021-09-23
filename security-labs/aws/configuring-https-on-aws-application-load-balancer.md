@@ -110,7 +110,7 @@ In this exercise you will verify the backend target group web servers can be acc
 6. Find the `[initials]-networkinglab-ec2-lb` load balancer, and click on it.
 7. From the *Description* tab for the Application Load Balancer, copy the *DNS name*.
 8. Open a new browser window and type `https://` in the address line, paste the *DNS name* after that, and press *Enter*.
-9. You will see a browser warning. Add the URL to your browser's exception list.
+9. You will see a browser warning. Add the URL to your browser's exception list and load the page.
 10. Click next to the lock icon in the browser's address line and click on *More information*.
 11. Click on the *View certificate* to view the certificate.
 
