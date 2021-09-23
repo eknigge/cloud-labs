@@ -90,19 +90,6 @@ In this exercise, you will convert the certificate to PKCS#12 format using Mac O
 
 At this point, you have learned how to convert the self-signed certificate to PKCS#12 format on Mac OS X.
 
-### Exercise #3: Convert the Self-Signed Certificate to from PKCS#12 to PEM
-
-In this exercise, you will convert the certificate from PKCS#12 to PEM format using Mac OS X Terminal. This format is used for upload to cloud-based services and Web servers.
-
-1. Type the following command to convert the certificate to PKCS#12 format
-  ```
-  openssl pkcs12 -in -in [your_name]-self-signed.key.pfx -out [your_name]-self-signed.key.pem -nodes
-  ```
-2. List the files in the folder using the following command:
-  ```
-  ls -al
-  ```
-
 #### Exercise Summary
 
 At this point, you have learned how to convert the self-signed certificate from PKCS#12 format to PEM format on Mac OS X.
