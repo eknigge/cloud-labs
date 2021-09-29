@@ -23,7 +23,7 @@ If you are Windows 10, MacOS, or Linux user, SSH will be available from the Comm
 1. Open SSH client window.
 2. Type the following command:
    ```
-   ssh computelabadmin@<ip-address-of-the-remote-machine>
+   ssh <username>@<ip-address-of-the-remote-machine>
    ```
 3. Enter the password for the remote machine.
 4. *Milestone step:* At this point, you have learned how to connect to a remote machine using SSH.
