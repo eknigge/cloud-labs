@@ -34,7 +34,7 @@ To complete this lab, you will need the following:
 ### Exercise #1: Provision an EC2 Instance with Ubuntu Linux
 In this exercise, you will provision an EC2 instance that runs Ubuntu Linux operating system.
 
-1. Sign into the AWS Management console at [https://aws.amazon.com/console/](https://aws.amazon.com/console/) using your AWS credentials.
+1. Sign into the AWS Management console at [https://aws.amazon.com/console/](https://aws.amazon.com/console/) using your AWS credentials. Verify that the correct region is selected, if it is not you will not be able to create an *EC2* instance. 
 2. In the search box on top of the screen, type *EC2* and press *Enter*.
 3. Click on *EC2* from the list of *Services*.
 4. On the new page, click on the ![Launch instance button](media/aws-launch-instance-button.png) and select *Launch instance*.
@@ -52,7 +52,7 @@ In this exercise, you will provision an EC2 instance that runs Ubuntu Linux oper
 11. Click on the ![Next: Configure Security Group button](media/aws-next-configure-security-group-button.png) button to go to the next step.
 12. On the *Configure Security Group* screen, change the following:
   - *Security group name* → `[initials]-awsec2nginxweblab-sg`, where `[initials]` are your first, middle, and last name initials
-  - *Security group description* → `[your_full_name]'s security group for my first EC2 compute lab on AWS`
+  - *Security group description* → `[your_full_name]security group for my first EC2 compute lab on AWS`
 13. Click on the ![Add Rule button](media/aws-add-rule-button.png) button to add new security rule.
 14. Click on the drop down `Custom TCP` and select `HTTP` from the list.
 15. Click on the ![Review and Launch button](media/aws-review-and-launch-blue-button.png) button to review the information for your EC2 instance.
@@ -79,7 +79,7 @@ In this exercise, you will connect to the newly provisioned EC2 instance using a
 
 1. Click on the *Instance ID* next to the `[initials]-awsec2nginxweblab-instance` EC2 instance from the list, where `[initials]` are your first, middle, and last name initials.
 2. On the *Instance summary* screen, note the *Public IPv4 address* of the instance.
-3. On your local machine, open a terminal and change to the folder where yousaved the key file.
+3. On your local machine, open a terminal and change to the folder where you saved the key file.
 4. If you are using Mac OS or Linux, change the access mode for the key file byt typing:
    ```
    chmod 400 [initials]-awsec2nginxweblab-ec2-keypair.pem

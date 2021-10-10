@@ -72,7 +72,7 @@ In this exercise, you will create an Azure Function App Resource. Azure Function
 At this point, you have learned how to create a serverless app in Microsoft Azure using Azure Function App. Note that although you requested the creation of a single resource, multiple were created. 
 
 ### Exercise #2: Create an Azure Function
-In this exercise, you will create an Azure Function. Azure Function is the serverless service offered by Microsoft.
+In this exercise, you will create an Azure Function. Azure Function is the serverless function service offered by Microsoft.
 
 1. Click on the `azfunhttplab-[initials]-fun` App Service resource.
 2. In the second left-hand navigation, in section *Functions*, click on the ![Functions button](media/azure-functions-button.png) button.

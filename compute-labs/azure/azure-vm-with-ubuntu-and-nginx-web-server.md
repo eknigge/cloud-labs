@@ -100,7 +100,7 @@ In this exercise, you will connect to the newly provisioned VM using an SSH clie
 > You need to have an SSH client installed on your machine. On MacOS, Windows 10, or Linux the SSH client is available by default. For older Windows versions, you will need to download third-party SSH client software.
 
 1. Click on the `azvmnginxlab-[initials]-vm01` virtual machine resource.
-2. From the *Overview* blade note the *Public IP address* of the virtual machine.
+2. From the *Overview* blade note the *Public IP address* of the virtual machine. You may have to select this resource to access the *Public IP address*. 
 3. Open the terminal on your local machine.
 4. Connect to the virtual machine via SSH by typing the following at the command prompt:
    ```
