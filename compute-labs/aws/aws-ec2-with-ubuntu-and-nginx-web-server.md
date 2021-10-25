@@ -52,7 +52,7 @@ In this exercise, you will provision an EC2 instance that runs Ubuntu Linux oper
 11. Click on the ![Next: Configure Security Group button](media/aws-next-configure-security-group-button.png) button to go to the next step.
 12. On the *Configure Security Group* screen, change the following:
   - *Security group name* → `[initials]-awsec2nginxweblab-sg`, where `[initials]` are your first, middle, and last name initials
-  - *Security group description* → `[your_full_name]security group for my first EC2 compute lab on AWS`
+  - *Security group description* → `[your_full_name]'s security group for my first EC2 compute lab on AWS`
 13. Click on the ![Add Rule button](media/aws-add-rule-button.png) button to add new security rule.
 14. Click on the drop down `Custom TCP` and select `HTTP` from the list.
 15. Click on the ![Review and Launch button](media/aws-review-and-launch-blue-button.png) button to review the information for your EC2 instance.

@@ -40,7 +40,7 @@ In this exercise, you will create an AWS Lambda Function for your serverless app
 6. On the same screen, fill in the following information:
    - *Function name* → `[initials]-awslbdhttplab-fun`
    - *Runtime* → `Node.js 14.x`
-7. Change the default execution role to `Use an existing role`. For the existing role select `Lambda_Role`.
+7. Change the default execution role to `Use an existing role`. For the existing role consult your instructor.
 8. Click on the ![Create function button](media/aws-create-function-orange-button.png) button.
 
 #### Exercise Summary
