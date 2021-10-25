@@ -51,7 +51,7 @@ In this exercise, you will provision a Microsoft Azure Storage Account.
   - *Storage account name* → `[initials]azstrsitelablab01str`, where `[initials]` are your first, middle, and last name initials
   - *Region* → `West US 2`
   - *Performance* → `Standard`
-  - *Replication* → `Locally-redundant storage (LRS)`
+  - *Redundancy* → `Locally-redundant storage (LRS)`
 8. Click on the ![Next: Advanced](media/azure-next-advanced-button.png) button.
 9. On the *Advanced* tab, leave the default selections.
 10. Click on the ![Next: Networking](media/azure-next-networking-button.png) button.
