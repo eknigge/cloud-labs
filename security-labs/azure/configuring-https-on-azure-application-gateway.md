@@ -32,9 +32,9 @@ To complete this lab, you will need the following:
 
 ## Lab Instructions
 
-### Exercise #1: Create a Self-Signed Certificate to Use for the Application Load Balancer
+### Exercise #1: Create a Self-Signed Certificate to Use for the Application Gateway
 
-In this exercise you will create a self-signed certificate that you will use for the Application Load Balancer.
+In this exercise you will create a self-signed certificate that you will use for the Application Gateway.
 
 1. Use the inststructions from [Creating a Self-Signed Certificate on MacOS X](../general/creating-self-signed-cert-on-macos.md) or [Creating a Self-Signed Certificate on Windows 10](../general/creating-self-signed-cert-on-windows.md) to create a self-signed certificate.
 2. Notice the folder on your local machine where the certificate files are saved.
@@ -43,8 +43,8 @@ In this exercise you will create a self-signed certificate that you will use for
 
 In this exercise you will create the infrastructure for the Azure Application Gateway.
 
-1. Use the instructions from [Creating an Azure Application Gateway](../../networking-labs/azure/creating-application-gateway-in-azure.md) to create the infrastructure for the Application Load Balancer.
-2. Verify that the back end targets are accessible using the HTTP (80) port using the Application Load Balancer's Public IP address.
+1. Use the instructions from [Creating an Azure Application Gateway](../../networking-labs/azure/creating-application-gateway-in-azure.md) to create the infrastructure for the Application Gateway.
+2. Verify that the back end targets are accessible using the HTTP (80) port using the Application Gateway's Public IP address.
 
 ### Exercise #3: Add an HTTPS Listener in Azure Application Gateway
 
