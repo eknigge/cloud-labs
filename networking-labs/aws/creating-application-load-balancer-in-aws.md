@@ -9,7 +9,7 @@
 | Tags              | ![https://img.shields.io/badge/%20-EC2-blue](https://img.shields.io/badge/%20-EC2-blue) ![https://img.shields.io/badge/%20-Load%20Balancer-blue](https://img.shields.io/badge/%20-Load%20Balancer-blue) ![https://img.shields.io/badge/%20-Web%20Server-blue](https://img.shields.io/badge/%20-Web%20Server-blue) |
 
 ## Lab Scenario
-In this lab, you will provision an Application Load Balancer in AWS. You will configure the Load Balancer to balance web traffic between two web servers deployed on Amazon EC2 instances.
+In this lab, you will provision an Applicaiton Load Balancer in AWS. You will configure the Load Balancer to balance web traffic between two web servers deployed on Amazon EC2 instances.
 
 Each exercise below builds upon the previous one. You should start each new exercise from the last step of the previous exercise unless it is explicitly written otherwise.
 
@@ -32,9 +32,8 @@ To complete this lab, you will need the following:
 
 In this exercise you will provision the first EC2 instance that will be connected to the load balancer. Follow the instructions in the [AWS EC2 Instance With Ubuntu and NGINX Web Server lab](../../compute-labs/aws/aws-ec2-with-ubuntu-and-nginx-web-server.md) with the following modifications:
 
-1. In *step 10* of *exercise #1*, change the tags as follows:
+1. In *step 10* of *exercise #1*, change the *Name* tag as follows:
    - *Name* → `[initials]-awsnetworkinglab-instance01`, where `[initials]` are your first, middle, and last name initials
-   - *Lab* → [initials]-awsnetworkinglab, where `[initials]` are your first, middle, and last name initials
 2. In *step 12* of *exercise #1*, change the *Security group name* and *Security group description* as follows:
   - *Security group name* → `[initials]-awsnetworkinglab-sg`, where `[initials]` are your first, middle, and last name initials
   - *Security group description* → `[your_full_name]'s security group for my first networking compute lab on AWS`
@@ -86,36 +85,41 @@ In this exercise, you will provision an Application Load Balancer in AWS.
 5. Click on the *Load Balancers*.
 6. Click on the ![Create Load Balancer button](media/aws-create-load-balancer-blue-button.png) button.
 7. Click on the ![Create button](media/aws-create-blue-button.png) button under *Application Load Balancer (HTTP/HTTPS)*.
-8. Under the *Basic Configuration* section, fill in the following information:
+8. In *Step 1: Configure Load Balancer*, in the *Basic Configuration* section, fill in the following information:
   - *Name* → `[initials]-networkinglab-ec2-lb`
   - *Scheme* → `internet-facing`
   - *IP address type* → `ipv4`
-9. Under the *Network Mapping* section, select the following:
+9. In *Step 1: Configure Load Balancer*, the *Availability Zones* section, select the following:
   - `us-west-2a`
   - `us-west-2b`
   - `us-west-2c`
   - `us-west-2d`
-10. Under the *Tags* section, and add the following tags:
+10. In *Step 1: Configure Load Balancer*, expand the *Tags* section, and add the following tags:
   - *Name* → `[initials]-networkinglab-ec2-lb`
   - *Role* → `web`
   - *Lab* → `networkinglab`
   - *Owner* → `[your name]`
   - *OwnerEmail* → `[your email]`
-11. Click on the *Create new security group* link
-12. Use the following values for the new security group:
+11. Click on the ![Next: Configure Security Settings button](media/aws-next-configure-security-settings-button.png) button.
+12. Click on the ![Next: Configure Security Groups button](media/aws-next-configure-security-groups-button.png) button.
+13. In *Step 3: Configure Security Groups*, change the radio button to `Create a new security group` and use the following values:
   - *Security group name* → `[initials]-awsnetworkinglab-lb-sg`, where `[initials]` are your first, middle, and last name initials
   - *Security group description* → `[your_full_name]'s security group for my load balancer on AWS`
-13. Click *Create security group* and return to the *Load Balancer* configuration page
-14. Under *Listeners and routing* Click *Create target group*
-15. Fill in the following information:
+14. Click on the ![Next: Configure Routing button](media/aws-next-configure-routing-button.png) button.
+15. In *Step 4: Configure Routing*, in the *Target group* section, fill in the following:
+  - *Target group* → `New target group`
   - *Name* → `[initials]-awsnetlab-web-instances`, where `[initials]` are your first, middle, and last name initials
-16. Leave the rest of the selections as by default and click *Next*.
-17. Select the following instances:
+16. Leave the rest of the selections as by default.
+17. Click on the ![Next: Register Targets button](media/aws-next-register-targets-button.png) button.
+18. In *Step 5: Register Targets*, in the *Instances* section, select the following instances:
   - `[initials]-awsnetworkinglab-instance01`
   - `[initials]-awsnetworkinglab-instance02`
+  
     where `[initials]` are your first, middle, and last name initials
-18. Click *Include as pending below* and then click *Create target group*
-19. Return to the *Load Balancer* page and click *Create load balancer*
+19. Click on the ![Add to registered button](media/aws-add-to-registered-blue-button.png) button.
+20. Click on the ![Next: Review button](media/aws-next-review-button.png) button.
+21. Click on the ![Create button](media/aws-create-button.png) button.
+22. Once the Application Load Balancer is deployed, click on the ![Close button](media/aws-close-button.png) button
 
 #### Exercise Summary
 At this point, you have learned how to provision an Application Load Balancer in AWS.
@@ -151,12 +155,12 @@ In this exercise, you will learn how to stop and terminate the resources and not
 4. Click on the *Instance ID* next to the `[initials]-awsnetworkinglab-instance01` EC2 instance from the list, where `[initials]` are your first, middle, and last name initials.
 5. From the ![Instance State button](media/aws-instance-state-dropdown-button.png), select the *Terminate instance* option.
 6. Click on the ![Terminate button](media/aws-terminate-orange-button.png) on the *Terminate instances* pop-up to confirm.
-7. Repeat steps 4 through 6 for the `[initials]-awsnetworkinglab-instance02` EC2 instance.
+7. Repear steps 4 through 6 for the `[initials]-awsnetworkinglab-instance02` EC2 instance.
 8. Scroll down the left-hand navigation and find section *Load Balancing*.
 9. Click on the *Load Balancers*.
 10. Select the `[initials]-networkinglab-ec2-lb` load balancer.
 11. Click on the ![Actions button](media/aws-actions-dropdown-button.png) button and select *Delete*.
-12. Confirm the deletion by clicking on the ![Yes, Delete button](media/aws-yes-delete-blue-button.png) button.
+12. Confirm the deletion by clickin on the ![Yes, Delete button](media/aws-yes-delete-blue-button.png) button.
 
 ## Help improve this lab
 
