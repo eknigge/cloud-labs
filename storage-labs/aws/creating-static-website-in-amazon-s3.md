@@ -50,7 +50,7 @@ In this exercise, you will create an Amazon S3 bucket that you will use to host 
    - *Role* → `static web`
    - *Lab* → `s3storagelab`
    - *Owner* → `[your name]`
-   - *OwnerEmail* → `[your email]`
+   - *OwnerEmail` → `[your email]`
 9. Select `Disable` for *Default encryption*.
 10. Click on the ![Create bucket button](media/aws-create-bucket-orange-button.png) button.
  
@@ -62,8 +62,8 @@ At this point, you have learned how to create an Amazon S3 bucket.
 
 In this exercise, you will enable the hosting of a static website in the Amazon S3 bucket.
 
-1. Click on the `[initials]s3sitelabbkt` bucket from the list, where `[initials]` are your initials.
-2. On the next screen, change to the *Properties* tab.
+1. Clik on the `[initials]s3sitelabbkt` bucket from the list, where `[initials]` are your initials.
+2. On the next screen, change to the *Permissions* tab.
 3. Scroll down to the *Static website hosting* section and click on the ![Edit button](media/aws-edit-button.png).
 4. Change the selection to `Enable`.
 5. Fill in the following information in the form that appears:
