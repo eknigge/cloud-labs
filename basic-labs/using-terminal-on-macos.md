@@ -1,4 +1,4 @@
-# Using Command Prompt on Windows
+# Using Terminal on macOS
 
 > Hands-on Lab
 

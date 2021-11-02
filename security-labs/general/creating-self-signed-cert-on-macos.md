@@ -56,7 +56,7 @@ In this exercise, you will create a self-signed certificate using Mac OS X Termi
   - *Locality Name (eg, city)*: `Seattle`
   - *Organization Name (eg, company)*: `[your first and last names]`
   - *Organizational Unit Name (eg, section)*: `Home`
-  - *Common Name (eg, fully qualified host name)*: `[your_first_and_last_name]-mac`
+  - *Common Name (eg, fully qualified host name)*: `[your_first_and_last_name]`
   - *Email Address*: `[your_email]`
 9. Create a decrypted version of your private key using the following command:
   ```

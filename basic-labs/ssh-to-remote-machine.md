@@ -1,4 +1,4 @@
-# Using Command Prompt on Windows
+# SSH to Remote Machine
 
 > Hands-on Lab
 

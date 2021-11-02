@@ -86,36 +86,44 @@ In this exercise, you will provision an Application Load Balancer in AWS.
 5. Click on the *Load Balancers*.
 6. Click on the ![Create Load Balancer button](media/aws-create-load-balancer-blue-button.png) button.
 7. Click on the ![Create button](media/aws-create-blue-button.png) button under *Application Load Balancer (HTTP/HTTPS)*.
-8. Under the *Basic Configuration* section, fill in the following information:
+8. In the *Basic Configuration* section, fill in the following information:
   - *Name* → `[initials]-networkinglab-ec2-lb`
   - *Scheme* → `internet-facing`
   - *IP address type* → `ipv4`
-9. Under the *Network Mapping* section, select the following:
+9. In the *Network Mapping* section, select the following:
   - `us-west-2a`
   - `us-west-2b`
   - `us-west-2c`
   - `us-west-2d`
-10. Under the *Tags* section, and add the following tags:
+10. Expand the *Tags* section, and add the following tags:
   - *Name* → `[initials]-networkinglab-ec2-lb`
   - *Role* → `web`
   - *Lab* → `networkinglab`
   - *Owner* → `[your name]`
   - *OwnerEmail* → `[your email]`
-11. Click on the *Create new security group* link
-12. Use the following values for the new security group:
-  - *Security group name* → `[initials]-awsnetworkinglab-lb-sg`, where `[initials]` are your first, middle, and last name initials
-  - *Security group description* → `[your_full_name]'s security group for my load balancer on AWS`
-13. Click *Create security group* and return to the *Load Balancer* configuration page
-14. Under *Listeners and routing* Click *Create target group*
-15. Fill in the following information:
-  - *Name* → `[initials]-awsnetlab-web-instances`, where `[initials]` are your first, middle, and last name initials
-16. Leave the rest of the selections as by default and click *Next*.
-17. Select the following instances:
-  - `[initials]-awsnetworkinglab-instance01`
-  - `[initials]-awsnetworkinglab-instance02`
-    where `[initials]` are your first, middle, and last name initials
-18. Click *Include as pending below* and then click *Create target group*
-19. Return to the *Load Balancer* page and click *Create load balancer*
+11. In the *Security Groups* section, select the `Create a new security group` link. In the new tab, use the following values:
+   - *Security group name* → `[initials]-awsnetworkinglab-lb-sg`, where `[initials]` are your first, middle, and last name initials
+   - *Security group description* → `[your_full_name]s security group for my load balancer on AWS`
+12. In the *Inbound Rules* section, select `Add Rule`.
+13. In the *Type* dropdown, select `HTTP`. In the *Source* dropdown, select `Anywhere-IPv4`.
+14. Click the orange `Create Security Group` button in the bottom right.
+15. Return to the Load Balancers tab. In the *Security Groups* section, click the refresh icon.
+16. In the *security groups* dropdown search for `[initials]-awsnetworkinglab-lb-sg` and select it.
+17. In the *Listeners and Routing* section, select the `Create Target Group` link. In the new tab, fill in the following:
+   - *Name* → `[initials]-awsnetlab-web-instances`, where `[initials]` are your first, middle, and last name initials
+18. Leave the rest of the selections as by default.
+19. Click on the orange `Next` button in the bottom right. 
+20. On the *Register Targets* page, select the following instances:
+   - `[initials]-awsnetworkinglab-instance01`
+   - `[initials]-awsnetworkinglab-instance02`
+   where `[initials]` are your first, middle, and last name initials.
+21. Click on the `Include As Pending Below` button.
+22. Click on the orange `Create Target Group` button in the bottom right.
+23. Return to the Load Balancers tab. In the *Listeners and Routing* section, click the refresh icon.
+24. In the *Default Action* dropdown, search for `[initials]-awsnetlab-web-instances`, where `[initials]` are your first, middle, and last name initials, and select it.
+25. Select the orange `Create Load Balancer` button in the bottom right.
+26. Once the Application Load Balancer is deployed, click on the `View Load Balancers` button.
+
 
 #### Exercise Summary
 At this point, you have learned how to provision an Application Load Balancer in AWS.
