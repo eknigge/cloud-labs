@@ -103,7 +103,7 @@ In this exercise, you will convert the certificate from PKCS#12 to PEM format us
 
 1. Type the following command to convert the certificate to PKCS#12 format
   ```
-  openssl pkcs12 -in -in [your_name]-self-signed.key.pfx -out [your_name]-self-signed.key.pem -nodes
+  openssl pkcs12 -in [your_name]-self-signed.key.pfx -out [your_name]-self-signed.key.pem -nodes
   ```
 2. List the files in the folder using the following command:
   ```
