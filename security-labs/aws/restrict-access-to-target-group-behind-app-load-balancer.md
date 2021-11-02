@@ -73,8 +73,8 @@ In this exercise you will modify the rules for the security group used by the EC
 4.  Click on the [Edit inbound rules button](media/aws-edit-inbound-rules-button.png).
 5.  Remove the `0.0.0.0/0` source IP range for all rules.
 6.  For the `SSH` rule, add the IP address for your local network that you obtained in *exercise #1*.
-7.  For the first `HTTP` rule, select the `[initials]-awsnetworkinglab-lb-sg` security group.
-8.  Delete the remaining `HTTP` rule.
+7.  For the `HTTPS` rule, select the `[initials]-awsnetworkinglab-lb-sg` security group.
+8.  Delete the `HTTP` rule.
 
 #### Exercise Summary
 
@@ -98,8 +98,8 @@ In this exercise you will verify the configuration is working as expected.
 12. Verify that you can connect ans sign into the first EC2 instance.
 13. Use an SSH client to connect and sign into the second EC2 instance from your local machine.
 14. Verify that you can connect ans sign into the second EC2 instance.
-15. Ask a colleague of yours to SSH and sing into one or both EC2 instances using your credentials.
-16. Verify that your cooleague is not able to connect and sign in to any of the above EC2 instances.
+15. Ask a colleague of yours to SSH and sign into one or both EC2 instances using your credentials.  It may be helpful to set a connection timeout value. To do that add the following flag to the ssh connection command `-o ConnectTimeout=[time]` where `[time]` is the timeout time in seconds.
+16. Verify that your colleague is not able to connect and sign in to any of the above EC2 instances.
 
 #### Exercise Summary
 
