@@ -1,0 +1,46 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: CloudFormation example template from Polynique
+Parameters:
+  Email:
+    Type: String
+    Default: student@class.com
+    Description: Your email address
+  Name:
+    Type: String
+    Default: Jon Doe
+    Description: Your first and last name
+  Initials:
+    Type: String
+    Default: nnn
+    Description: Your first, middle, and last name Initials
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: !Join ["-", [!Ref AWS::StackName, "static-website"]]
+      MetricsConfigurations: 
+        - Id: EntireBucket
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+        RoutingRules:
+        - RoutingRuleCondition:
+            HttpErrorCodeReturnedEquals: '404'
+            KeyPrefixEquals: out1/
+          RedirectRule:
+            HostName: ec2-11-22-333-44.compute-1.amazonaws.com
+            ReplaceKeyPrefixWith: report-404/
+      Tags: 
+        - Key: "email"
+          Value: !Ref Email
+        - Key: "student"
+          Value: !Ref Name
+    DeletionPolicy: Retain
+Outputs:
+  WebsiteURL:
+    Value: !GetAtt [S3Bucket, WebsiteURL]
+    Description: URL for website hosted on S3
+  S3BucketSecureURL:
+    Value: !Join ['', ['https://', !GetAtt [S3Bucket, DomainName]]]
+    Description: Name of S3 bucket to hold website content
