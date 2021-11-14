@@ -42,6 +42,7 @@ In this exercise you will install and configure the AWS CLI.
    - *Default region name [None]:* `us-west-2`
    - *Default output format [None]:* `JSON`
 
+   If you do not have your access key and secret access key, you will need to contact your instructor since this information is only generated once, and not available for future viewing.
 #### Exercise Summary
 At this point, you have learned how to install and configure AWS CLI on your machine.
 
