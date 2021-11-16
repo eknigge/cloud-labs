@@ -69,14 +69,13 @@ In this exercise, you will add an HTTPS Listener in the Application Load Balance
   ```
   [your_name]-self-signed-certificate
   ```
-16.  Find the `[your_name]-self-signed.decrypted.key` key file that you created as part of the *exercise #1*, and open it with a text editor.
-17.  Copy the content of the *private key* and paste it in the *Certificate private key (PEM encoded)* input field.
-18.  Find the `[your_name]-self-signed.key` certificate file that you created as part of the *exercise #1*, and open it with a text editor.
-19.  Copy the content of the *certificate* and paste it in the *Certificate body (PEM encoded)* input field.
+16.  Find the `[your_name]-self-signed.decrypted.key.pem` key file that you created as part of the *exercise #1*, and open it with a text editor.
+17.  Copy the content of the *private key* section and paste it in the *Certificate private key (PEM encoded)* input field.
+18.  Copy the content of the *begin certificate* and paste it in the *Certificate body (PEM encoded)* input field.
     
     > **Note:** Make sure that you do not modify the content of the file
-20. Click on the [Add listener button](media/aws-add-listener-blue-button.png) button to save the new listener.
-21. Click on the [Back button](media/aws-back-button.png) button to go back to the list of load balancers.
+19. Click on the [Add listener button](media/aws-add-listener-blue-button.png) button to save the new listener.
+20. Click on the [Back button](media/aws-back-button.png) button to go back to the list of load balancers.
 
 #### Exercise Summary
 
