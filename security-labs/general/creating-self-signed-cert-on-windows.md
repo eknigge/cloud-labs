@@ -50,13 +50,6 @@ In this exercise, you will create a self-signed certificate using Command Prompt
    
    where you replace `[your_name]` with your first and last names separated by underscore.
   
-  - If you run into the error "unable to find distinguished_name in the config" follow these additional steps. 
-      - Download the `openssl.cnf` file from this repository or file a sample file from a trusted source. You should download or create the file in the same directory you are trying to create the certificate.
-      - Use the `Windows` + `R` keys to open the run command. Enter `sysdm.cpl` and click *Ok*. 
-      - Go to the *Advanced* tag and click on *Environment Variables*
-      - Under *User variables for [your_username]* click *New...*
-      - For the name enter `OPENSSL_CONF` and for the Value enter [`certificate_directory`]
-      - Click *Ok* to accept the changes
 4. Type a strong password for the certificate.
 5. Fill in the following information at the prompts:
   - *Country Name (2 letter code)*: `US`
