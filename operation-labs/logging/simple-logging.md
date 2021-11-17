@@ -57,10 +57,10 @@ While implementing the code, you must also instrument your code for logging and 
   - Total execution time
   - When in "read" mode
     - Average time to read a line from the file
-    - Average time to find the word "imperdiet" in the line
+    - Average time to find all the letters `i` in the line
   - When in "write" mode
     - Average time to write a line in the file
-    - Average time to find the word "imperdiet" in the line
+    - Average time to find all the letters `i` in the line
 - You should add an additional (administrative) input to the program to allow the user to print the performance statistics after the output
 
 ### Exercise #2: Test Your Python Script
