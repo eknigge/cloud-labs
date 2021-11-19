@@ -78,7 +78,7 @@ Use the following table to aid your design:
 
 ### Exercise #2: Create a Swagger Document for the Task Management API
 
-In this exercise, you will use the information from the previous exercise to create a Swagger document for he Task Management API.
+In this exercise, you will use the information from the previous exercise to create a Swagger document for the Task Management API.
 
 - Use the information from the previous exercise to describe the API in a standard Swagger format. You can use the [Swagger Editor](https://editor.swagger.io/) for that purpose.
 - Save the resulting Swagger document in `YAML` format.
